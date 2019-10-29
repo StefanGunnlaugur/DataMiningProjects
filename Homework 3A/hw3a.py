@@ -477,7 +477,7 @@ def train_with_batch_comparison(NN):
     drawFigure('Running time based on batch size',['Running time'], [batch_sizes], [training_times], 'Batch Size', 'Running Time', 1, 10, 0, 3, 1)
 
 NN = init_net(3)
-train_with_batch_comparison(NN)
-#training_time = run_training(NN,showLog=False, graphs_to_show=[True,True,True], learning_rate = 0.01, batch_size = 2, number_test = 20, number_epoc = 50,)
+#train_with_batch_comparison(NN)
+training_time = run_training(NN,showLog=False, graphs_to_show=[True,True,True], learning_rate = 0.01, batch_size = 2, number_test = 20, number_epoc = 50,)
 plt.show()
 
